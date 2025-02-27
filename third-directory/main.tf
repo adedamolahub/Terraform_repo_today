@@ -3,7 +3,7 @@ resource "aws_instance" "first_vm" {
   instance_type = var.instance_type
   key_name = "key_pair"
   subnet_id = data.terraform_remote_state.statefile_output_data.outputs["subnet_id"]
-  vpc_security_group_ids = [aws_security_group.ec2-security_group1.id]
+  vpc_security_group_ids = [aws_security_group.ec2-sg.id]
   associate_public_ip_address = true
 
   user_data = <<-EOF
