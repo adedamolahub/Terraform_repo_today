@@ -2,7 +2,6 @@ resource "aws_instance" "first_vm" {
   ami           = "ami-05b10e08d247fb927" 
   instance_type = var.instance_type
   key_name = "key_pair"
-  subnet_id = aws_subnet.subnet1.id
   vpc_security_group_ids = [aws_security_group.ec2-security_group.id]
   associate_public_ip_address = true
 
