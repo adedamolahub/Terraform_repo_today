@@ -12,9 +12,3 @@ variable "region" {
   
 }
 
-variable "vpc" {
-    type = string
-    description = "network vpc for provisioning"
-    default = "us-east-1"
-  
-}
