@@ -1,6 +1,6 @@
 
 resource "aws_security_group" "ec2-sg" {
-  name        = "ec2-security_group"
+  name        = "ec2-security_group_new"
   description = "SG for security"
  
 
