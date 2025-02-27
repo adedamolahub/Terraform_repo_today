@@ -8,13 +8,13 @@ output "public_dns" {
   value = aws_instance.first_vm.public_dns
 }
 
-output "vpc_id" {
+output "instance_arn" {
   description = "vpc_id"
-  value = aws_vpc.main_vpc.id
+  value = aws_instance.first_vm.arn
   
 }
 
 output "subnet_id" {
   description = "subnet"
-  value = aws_subnet.subnet1.id
+  value = aws_instance.first_vm.subnet_id
 }
