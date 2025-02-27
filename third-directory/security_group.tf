@@ -1,5 +1,5 @@
 
-resource "aws_security_group" "ec2-security_group" {
+resource "aws_security_group" "ec2-security_group1" {
   name        = "ec2-security_group"
   description = "SG for security"
  
